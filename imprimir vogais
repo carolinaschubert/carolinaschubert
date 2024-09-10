@@ -1,0 +1,13 @@
+def print_vowels(text):
+    # Define the vowels
+    vowels = "aeiouAEIOU"
+    # Use a list comprehension to filter out the vowels
+    result = [char for char in text if char in vowels]
+    return ''.join(result)
+
+# Example usage:
+if __name__ == "__main__":
+    # Input from the user or predefined text
+    example_text = "Hello, World!"
+    vowels_in_text = print_vowels(example_text)
+    print("Vowels in the text:", vowels_in_text)
